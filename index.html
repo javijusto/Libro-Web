@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Javier Justo</title>
+  </head>
+  <body id="bg-img" onload="showTitle();" onmouseover="showSub();">
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+      <nav class="menu">
+        <div class="menu-branding">
+        </div>
+        <ul class = "menu-nav" id="men">
+            <li class="nav-item">
+                <div class="portrait"></div>
+            </li>
+          <li  class="nav-item">
+            <a href="javascript:onclick=showA('about');" class="nav-link" id="arriba">Capitulo 0</a>
+        </li>
+          <li class="nav-item">
+              <a href="javascript:onclick=showA('work');" class="nav-link" id="izquierda">Capitulo 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="javascript:onclick=showA('audio');showSlides();" class="nav-link" id="abajosm">Capitulo 2</a>
+        </li>
+          <li class="nav-item">
+              <a href="javascript:onclick=showA('contact');" class="nav-link" id="abajo">Capitulo 3</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="home" onclick="cerrarMenu();rmLib();">
+      <h1 class="lg-heading" id="tit"></h1>
+      <h2 class="sh-heading" id="sub"></h2>
+      <div id ="iconosA" class="icons" style="position:relative;bottom:13rem;">
+        <a href="https://www.linkedin.com/in/javier-justo-garcia/" class="i">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+        <a href="https://github.com/javijusto" class="i">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="mailto:javier.justo@outlook.es" class="i" alt='javier.justo@outlook.es'>
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>        
+      </div>
+    </main>
+    <div class="lib" id="libro">
+      <div class="hoja" id="about"><a href="javascript:rmLib();">Volver</a></div>
+      <div class="hoja" id="work"><a href="javascript:rmLib();">Volver 1</a></div>
+      <div class="hoja" id="audio"><a href="javascript:rmLib();">Volver 2</a></div>
+      <div class="hoja" id="contact"><a href="javascript:rmLib();">Volver 3</a></div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
